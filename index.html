@@ -122,4 +122,22 @@
     return a < b;
   }
   console.log(less(10, 15));
+  //creating objects
+  var mydog = {
+    name: "akamaru",
+    legs: 4,
+    tails: 1,
+    friends: ["everything"],
+  };
+  //acessing obj
+  console.log(mydog.name);
+  console.log(mydog["tails"]);
+  //changing propertie of obj
+  mydog.friends = "spike";
+  console.log(mydog.friends);
+  console.log(mydog);
+  //adding new properties of obj
+  mydog.bark = "bow bow";
+  //deleting obj properties of obj
+  delete mydog.bark;
 </script>
