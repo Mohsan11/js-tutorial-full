@@ -76,4 +76,14 @@
     console.log(a - b);
   }
   myfun1(10, 15);
+  //variable out of the function scope in a global variable.
+  //variable in the function scope is a local variable.
+  //stand line function
+  function nextinline(arr, item) {
+    return item;
+  }
+  var testarr = [1, 2, 3, 4, 5];
+  console.log("before:" + JSON.stringify(testarr));
+  console.log(nextinline(testarr, 6));
+  console.log("After:" + JSON.stringify(testarr));
 </script>
