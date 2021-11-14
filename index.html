@@ -87,4 +87,39 @@
   console.log("before:" + JSON.stringify(testarr));
   console.log(nextinline(testarr, 6));
   console.log("After:" + JSON.stringify(testarr));
+  //if else/ nested if statements..
+  function comp(num) {
+    if (num > 10) {
+      return "greater then 10";
+    } else if (num < 5) {
+      return "smaller then 5";
+    } else {
+      return "between 5 and 10";
+    }
+  }
+  console.log(comp(15));
+  //switch statement..
+  function inswitch(val) {
+    var ans = "";
+    switch (val) {
+      case 1:
+        return "you choose 1";
+        break;
+      case 2:
+        return "you choose 2";
+        break;
+      case 3:
+        return "you choose 3";
+        break;
+      default:
+        return "enter numbers between 1-3";
+        break;
+    }
+  }
+  console.log(inswitch(4));
+  //boolean true or false
+  function less(a, b) {
+    return a < b;
+  }
+  console.log(less(10, 15));
 </script>
