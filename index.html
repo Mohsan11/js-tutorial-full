@@ -80,7 +80,8 @@
   //variable in the function scope is a local variable.
   //stand line function
   function nextinline(arr, item) {
-    return item;
+    arr.push(item);
+    return arr.shift();
   }
   var testarr = [1, 2, 3, 4, 5];
   console.log("before:" + JSON.stringify(testarr));
