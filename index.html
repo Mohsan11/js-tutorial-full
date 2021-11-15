@@ -376,4 +376,21 @@
   //simple field
   const createperson = (name, age, gender) => ({ name, age, gender });
   console.log(createperson("mohsan ali", 20, "male"));
+  //writing concise declarative function
+  const bicycle = {
+    gear: 3,
+    setgear(newgear) {
+      this.gear = newgear;
+    },
+  };
+  bicycle.setgear(4);
+  console.log(bicycle.gear);
+  //class syntax
+  class spaceshuttle {
+    constructor(targetplanet) {
+      this.targetplanet = targetplanet;
+    }
+  }
+  var zeus = new spaceshuttle("jupiter");
+  console.log(zeus.targetplanet);
 </script>
