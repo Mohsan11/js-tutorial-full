@@ -140,5 +140,71 @@
   mydog.bark = "bow bow";
   //deleting obj properties of obj
   delete mydog.bark;
-  ///////////////////////
+  //Manipulating complex obj and acessing nested array
+  var mymusic = [
+    {
+      artist: "eminem",
+      title: "music to be murder",
+      "release year": "2020",
+      formats: ["cd", "8t", "lp"],
+      gold: "true",
+    },
+
+    {
+      artist: "drake",
+      title: "music ...",
+      "release year": "2020",
+      formats: ["cd", "8t", "lp"],
+      gold: "true",
+    },
+  ];
+  var music = mymusic[0].title;
+  console.log(music);
+  //acessing nested objects
+  var mystorage = {
+    car: {
+      inside: {
+        golvebox: "maps",
+        "passenger seat": "crumbs",
+      },
+      outside: {
+        trunk: "jack",
+      },
+    },
+  };
+  var gloveboxcontents = mystorage.car.outside["trunk"];
+  console.log(gloveboxcontents);
+  //while loop
+  var y = [];
+  var i = 0;
+  while (i < 5) {
+    y.push(i);
+    i++;
+  }
+  console.log(y);
+  //for loop
+  var ourarr = [];
+  for (var i = 1; i < 6; i++) {
+    ourarr.push(i);
+  }
+  console.log(ourarr);
+  //for loop even numbers
+  var x = [];
+  for (var j = 0; j <= 10; j += 2) {
+    x.push(j);
+  }
+  console.log(x);
+  //for loop for odd numbers and backword
+  var x = [];
+  for (var j = 9; j > 0; j -= 2) {
+    x.push(j);
+  }
+  console.log(x);
+  //itration through for loop
+  var ourarr = [9, 10, 11, 12];
+  var ourtotal = 0;
+  for (var i = 0; i < ourarr.length; i++) {
+    ourtotal += ourarr[i];
+  }
+  console.log(ourtotal);
 </script>
