@@ -393,4 +393,25 @@
   }
   var zeus = new spaceshuttle("jupiter");
   console.log(zeus.targetplanet);
+  //getter and setter
+  function makeclass() {
+    class thermostat {
+      constructor(temp) {
+        this._temp = (5 / 9) * (temp - 32);
+      }
+      get temprature() {
+        return this._temp;
+      }
+      set temprature(updatedtemp) {
+        this._temp = updatedtemp;
+      }
+    }
+    return thermostat;
+  }
+  const thermostat = makeclass();
+  const thermos = new thermostat(76);
+  let temp = thermos.temprature;
+  thermos.temprature = 26;
+  temp = thermos.temprature;
+  console.log(temp);
 </script>
