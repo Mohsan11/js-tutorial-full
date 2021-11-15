@@ -365,4 +365,15 @@
   })();
   console.log(a);
   console.log(b);
+  //creating string using template litrals
+  const person = {
+    name: "mohsan ali",
+    age: 20,
+  };
+  const greeting = `hello, y name is ${person.name}!
+  i am ${person.age} years old.`;
+  console.log(greeting);
+  //simple field
+  const createperson = (name, age, gender) => ({ name, age, gender });
+  console.log(createperson("mohsan ali", 20, "male"));
 </script>
