@@ -231,4 +231,20 @@
     i++;
   } while (i < 5);
   console.log(i, myarray);
+  //math.random
+  function randomfraction() {
+    return Math.random();
+  }
+  console.log(randomfraction());
+  //generate random whole numbers
+  function randomwholenumber() {
+    return Math.floor(Math.random() * 10);
+  }
+  console.log(randomwholenumber());
+  //random range
+  function randomrange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  var random = randomrange(5, 15);
+  console.log(random);
 </script>
