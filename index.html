@@ -326,4 +326,43 @@
     arr1[0] = "potato";
   })();
   console.log(arr2);
+  //deconstructuring assignment
+  var voxel = { x: 3.6, y: 7.4, z: 6.54 };
+  var x = voxel.x;
+  var y = voxel.y;
+  var z = voxel.z; //instead of writing like this we can write it like
+  const { x: a, y: b, z: c } = voxel; //this
+  //
+  const avg_temp = {
+    today: 77.5,
+    tomorrow: 79,
+  };
+  function gettempoftmrw(avg_temp) {
+    const { tomorrow: tempoftomorrow } = avg_temp;
+    return tempoftomorrow;
+  }
+  console.log(gettempoftmrw(avg_temp));
+  //distructive assgn with nested obj
+  const localforcast = {
+    today: { min: 72, max: 83 },
+    tomorrow: { min: 73.3, max: 84.6 },
+  };
+  function getmaxtmrw(forecast) {
+    const {
+      tomorrow: { max: maxoftomorrow },
+    } = forecast;
+    return maxoftomorrow;
+  }
+  console.log(getmaxtmrw(localforcast));
+  //distructive assgn to var from arry
+  const [f, g, , d] = [1, 2, 3, 4, 5, 6];
+  console.log(f, g, d);
+
+  var u = 8,
+    v = 6;
+  (() => {
+    [u, v] = [v, u];
+  })();
+  console.log(a);
+  console.log(b);
 </script>
