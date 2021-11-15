@@ -268,4 +268,16 @@
     return num > 0 ? "positive" : num < 0 ? neagtive : "zero";
   }
   console.log(checksign(10));
+  // if we dont want to chaneg var once declared we use let instead in var
+  // declaring var without using var or let keyword is strick
+  // we cannot reassign const while let and var san be re assigned.
+  //we can reassign array of const.
+  const s = [5, 7, 2];
+  function editplace() {
+    s[0] = 3;
+    s[1] = 5;
+    s[2] = 8;
+  }
+  editplace();
+  console.log(s);
 </script>
